@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<!-- night day 변환 페이지 / 
+ html 주석 단축키 컨트롤+/ 
+ 코드 페이지 자동 줄바꿈 단축키 Alt+Z
+ -->
+<head>
+  <title>WEB1 - JavaScript</title>
+  <meta charset="utf-8">
+  <!--  
+  .은 class #은 id. id가 class 보다 상위(id>class>일반 선택자)
+  "." "#" 없는 지정은 현재 페이지의 해당 태그 전체를 의미 
+
+  <style>
+    .onedaybt{
+      font-weight:bold;
+      color:black;
+    }
+    #spanid{
+      font-weight: bold;
+      color:rgb(157, 255, 158);
+      font-size:large;
+    }
+    a {
+      color:rgb(103, 171, 183);
+    }
+  </style>
+
+  -->
+</head>
+<body> 
+<!--
+  css code >> style="background-color:black;color:powderblue" 
+-->
+  <h1><a href="index.html">WEB</a></h1>
+  <input type="button" value="night" class="onedaybt" onclick="
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+  ">
+  <input type="button" value="day" class="onedaybt" onclick="
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+  ">
+  <!-- 
+  위의 두 버튼을 합친 토글 버튼
+  document.querySelector('#night_day').value
+   -->
+
+  <input type="button" value="night" id="night_day" onclick="
+  if (document.querySelector('#night_day').value==='night'){
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+
+    document.querySelector('#night_day').value = 'day';
+  } else {
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';  
+
+    document.querySelector('#night_day').value = 'night';
+  }
+  ">
+  <!-- 
+   버튼 value 값 바뀌는 거 별론데 그냥 id나 class 변경해서 안되나 
+  -->
+
+
+  <ol>
+    <li><a href="1.html">HTML</a></li>
+    <li><a href="2.html">CSS</a></li>
+    <li><a href="3.html">JavaScript</a></li>
+  </ol>
+  <h2>JavaScript</h2>
+  <div>
+    <span class="js">JavaScript</span> (/ˈdʒɑːvəˌskrɪpt/[6]), often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language. Alongside <span id="spanid">HTML</span> and CSS, JavaScript is one of the three core technologies of World Wide Web content production. It is used to make webpages interactive and provide online programs, including video games. The majority of websites employ it, and all modern web browsers support it without the need for plug-ins by means of a built-in JavaScript engine. Each of the many JavaScript engines represent a different implementation of JavaScript, all based on the ECMAScript specification, with some engines not supporting the spec fully, and with many engines supporting additional features beyond ECMA.
+  </div>
+
+
+  <input type="button" value="night" onclick="
+  var target = document.querySelector('body');
+  if (this.value==='night'){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+
+    this.value = 'day';
+  } else {
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';  
+
+    this.value = 'night';
+  }
+  ">
+</body>
+</html>
