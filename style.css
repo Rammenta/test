@@ -39,3 +39,10 @@ h1 {
     div p {/* div(부모 요소)의 p(하위 요소) */
         color:cornflowerblue;
     }
+
+    .testdiv {
+        background-color: darkseagreen;
+        margin:3px 5px 3px 5px;
+        border : 3px dotted coral;
+        padding:3xp 5px;
+    }
