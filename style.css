@@ -23,3 +23,11 @@ h1 {
     h2.coding { /* h2의 class가 coding인 요소 선택 */
         color:red;
     }
+
+    h2#codings { /* h2의 ID가 codings인 요소 선택 */
+        color:red;
+    }
+
+    div p {/* div(부모 요소)의 p(하위 요소) */
+        color:cornflowerblue;
+    }
