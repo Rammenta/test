@@ -8,6 +8,14 @@ h1 {
     
     * {} < 의 경우 요소 전체 적용 (Universal seletor)
 
+
+    가장 밑의 규칙이 최우선(Cascading)
+    부모 요소의 규칙이 자식에도 적용 : 상속(inheritance)
+    - 자식 요소에 css가 적용 되어 있다면 상속된 요소 보다 해당 요소를 상위 규칙으로 취급(직접 css가 출력)
+
+    우선순위(Specificity):규칙 충돌 시의 계급
+    HTML의 style 속성 > id > class >태그 순의 위계
+
     */
 }
 
