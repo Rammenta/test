@@ -40,9 +40,9 @@
 
 /* .은 class #은 id */
 
-h1 {
-    color:aquamarine;
-}
+    h1 {
+        color:aquamarine;
+    }
 
     .test { 
         color:darkgreen;
