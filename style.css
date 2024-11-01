@@ -1,5 +1,4 @@
-h1 {
-    color:aquamarine;
+* { box-sizing:content-box; }
 
     /* 
     property(속성):value(값);
@@ -16,10 +15,34 @@ h1 {
     우선순위(Specificity):규칙 충돌 시의 계급
     HTML의 style 속성 > id > class >태그 순의 위계
 
+    단위 : 
+    px(고정 된 값)
+
+    %(부모 요소를 기준으로 크기 설정)
+
+    em/rem 
+    : em은 부모 요소의 폰트 크기(상위 요소의 값에 em 값을 곱함 ex) 부모 요소의 font-size:20px, 하위 요소의 size:2em;인 경우 20p * 2 =40px
+
+    rem은 루트 요소(html의 요소)의 폰트 크기를 기준으로 적용
+    상위 요소를 일일히 지정하기 힘들어서 최상위 요소인 <html>의 폰트 사이즈를 기준으로 크기를 설정하게함
+    html {font-size:10px}
+    div.inner {width:5rem;}
+    의 경우 width:10 * 5 = 50 px
+
+    vv/vh (viewport)
+    각 디바이스별 화면의 너비/높이를 기준으로 배율 설정하는 단위
+
+    height:100vh; 현재 보이는 브라우저 가시 영역의 높이 100% (반응성)
+
+
     */
 }
 
-    /* .은 class #은 id */
+/* .은 class #은 id */
+
+h1 {
+    color:aquamarine;
+}
 
     .test { 
         color:darkgreen;
@@ -45,4 +68,17 @@ h1 {
         margin:3px 5px 3px 5px;
         border : 3px dotted coral;
         padding:3xp 5px;
+        box-sizing:content-box;
+        /*
+        기본 옵션이 content-box(브라우저의)고
+        요소 사이즈에 패딩과 테두리를 포함하지 않음.
+
+        box-sizing:border-box; 
+        의 경우 padding과 border를 포함함.
+
+        * { box-sizing:content-box; }
+
+        를 css 맨 위에 쓰고 하는 게 좋을 수 있음.
+
+        */
     }
