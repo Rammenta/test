@@ -94,9 +94,15 @@ img {
     cover:이미지를 부모 요소의 영역의 크기 만큼 확대or축소(원본 비율을 유지하며 확대)
 
     contain:너비와 높이 중 하나가 부모 요소의 값에 도달하면 확대 혹은 축소를 멈추고 이미지를 상하와 좌우 중앙에 정렬 (원본 비율 유지 = 전체 화면)
-    
+
     fill:이미지 비율을 유지 하지 않고 부모 요소의 크기에 이미지 크기를 변경함
     (원본 비율 유지 X)
     */
     height:;
+}
+
+div.overflow {
+    boder: 2px dashed darkgreen;
+    width:180px;
+    font-size:50px;
 }
