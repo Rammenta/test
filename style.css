@@ -2,8 +2,21 @@ h1 {
     color:aquamarine;
 
     /* 
+    property(속성):value(값);
+    속성과 값을 합쳐서 declaration(선언) 
+    h1 {} < 전체를 rule(규칙:선택자와 선언부의 조합) 이라고 함
     
-    property(속성):(값); 
-    
+    * {} < 의 경우 요소 전체 적용 (Universal seletor)
+
     */
 }
+
+    /* .은 class #은 id */
+
+    .test { 
+        color:darkgreen;
+    }
+    #test1, p {
+        color:violet;
+    }
+
