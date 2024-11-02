@@ -1,5 +1,4 @@
 * { box-sizing:content-box; }
-
     /* 
     property(속성):value(값);
     속성과 값을 합쳐서 declaration(선언) 
@@ -87,7 +86,7 @@ img {
     max-width:100%; 
     /* 부모 영역에서 벗어나지 않도록 너비 상한을 설정함 
     부모 요소가 너비 값을 가져야함(=div) */
-    object-fit:cover;
+    object-fit:contain;
     /* 사물을 특정 영역에 맞추는 속성으로 설정 시
     이미지를 부모 요소에 중앙 정렬 시킴 
     
@@ -98,7 +97,6 @@ img {
     fill:이미지 비율을 유지 하지 않고 부모 요소의 크기에 이미지 크기를 변경함
     (원본 비율 유지 X)
     */
-    height:;
 }
 
 div.overflow {
