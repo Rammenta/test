@@ -120,3 +120,14 @@ p{
 
     */
 }
+
+.container {
+border-radius: 20px;
+background-image: url(./backgroundpt.png);
+background-repeat:no-repeat;
+background-size: contain;
+/* contain 이미지가 온전히 표시 되는 것이 우선
+cover : 블록 전체를 채우는 것이 우선 
+*/
+background-position:center;
+}
