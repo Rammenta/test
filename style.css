@@ -102,7 +102,7 @@ img {
 }
 
 div.overflow {
-    boder: 2px dashed darkgreen;
+    boder: 2px solid darkgreen;
     width:180px;
     font-size:50px;
 }
