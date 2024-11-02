@@ -110,8 +110,13 @@ div.overflow22 {
 p{
     color:rgb(205, 101, 99);
     font-size:0.5rem;
+    font-style:italic;
+    font-weight:bold;
+    text-decoration: dotted;
     /* 
     Hex color(16진수 color code)
 
+    font-weight 값은 100~900 사이 100 단위
+    300이 기본, 700이 bold
     */
 }
