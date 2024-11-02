@@ -132,3 +132,15 @@ cover : 블록 전체를 채우는 것이 우선
 */
 background-position:center;
 }
+
+div.align {
+    margin:0 auto; /* 
+    전통적인 중앙 정렬 body에 적용 시 페이지 전체가 중앙 정렬함(부모 요소에 자주 사용)
+    부모 요소의 width가 없다면 적용 안됨
+    */
+    text-align:center;/* 
+    inline 요소(img span a) 정렬에 영향을 줌
+    부모 요소가 block 이고 자식이 inline 일 때 사용
+
+     */
+}
