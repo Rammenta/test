@@ -1,4 +1,5 @@
 * { box-sizing:content-box; }
+html {font-size:10px;}
     /* 
     property(속성):value(값);
     속성과 값을 합쳐서 declaration(선언) 
@@ -58,7 +59,7 @@
         color:red;
     }
 
-    div p {/* div(부모 요소)의 p(하위 요소) */
+    div a {/* div(부모 요소)의 a(하위 요소) */
         color:cornflowerblue;
     }
 
@@ -104,4 +105,13 @@ div.overflow22 {
     border: 2px solid darkgreen;
     width:180px;
     font-size:50px;
+}
+
+p{
+    color:rgb(205, 101, 99);
+    font-size:0.5rem;
+    /* 
+    Hex color(16진수 color code)
+
+    */
 }
