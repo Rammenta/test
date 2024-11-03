@@ -1,8 +1,8 @@
-
-
 * { box-sizing:content-box; 
+}
 
-    border-radius: 20px;
+html {
+
     background-image: url(./backgroundpt.png);
     background-repeat:repeat;
     background-size: contain;
@@ -20,7 +20,9 @@
     }
 
     font-family: 'KCC-Ahnchangho';
+
 }
+
     /* 
     property(속성):value(값);
     속성과 값을 합쳐서 declaration(선언) 
