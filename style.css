@@ -1,4 +1,13 @@
-* { box-sizing:content-box; }
+@font-face {
+    font-family: 'KCC-Ahnchangho';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/KCC-Ahnchangho.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* { box-sizing:content-box; 
+
+}
     /* 
     property(속성):value(값);
     속성과 값을 합쳐서 declaration(선언) 
