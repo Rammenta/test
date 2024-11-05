@@ -143,24 +143,43 @@
     <h1>Position</h1>
     <ul>
         <li><h2>static</h2>
-
+            모든 요소의 디폴트 값(요소가 생성 된 원래 위치)
         </li>
 
         <li><h2>relative</h2>
-            
+            원래 위치를 기준으로 요소를 움직일 때 사용<br>
+            Position:relative;<br>
+            left:50px; 시 처음 생성 된 위치에서 50px 이동한 위치에 생성<br>
         </li>
         <li><h2>absolute</h2>
-            
+            relative와 비슷한 개념이지만 이동 기준을 position이 static이 아닌 가장 가까운 부모 요소로 사용함
+            <br>별도의 부모 요소가 없을 시 body를 기준으로 위치를 움직임
+            <br>다른 요소에 구애를 받지 않고 이동(마진 포함)
+            <br>요소 간의 관계를 전부 무시하고 부모를 기준으로 위치만 변경됨(이거 반응형 플로팅 메뉴 넣을 때 좋지않을까? 아니 fixed였음 고정 상단밬ㅋㅋㅋㅋ)
         </li>
         <li><h2>fixed</h2>
-            
+            브라우저 창을 기준으로 고정된 위치
+
+            {position:fixed;
+            bottom:0;
+            right:0;
+            }<br>
+
+
         </li>
         <li><h2>sticky</h2>
-            
+            스크롤로 특정 위치에 도달하면 고정하는 속성
+            <br>뭔 소리야 설명 존나 못해 진짜<br>
+            position:sticky;
+            top:0; < top 0 이 되면 멈춰라<br>
+            뭔 소리야 진짜 설명 존나 못해2
+            <br><br> 
+
         </li>
-    </ul>
-        <br>block 요소들은 width 지정 시 자식 
-    
+    </ul>    
+</div>
+<div style="width:300px;height:100px;background-color:red;position:sticky;top:0;">
+뭔 소린지 모르겠어서 만들었다
 </div>
 
 
