@@ -80,9 +80,9 @@
 <div>
 <h1>Float</h1>
     자식 요소가 부모 요소로 부터 떠오른다(margin 제거)
-    <br>block 요소들은 width 지정 시 자식 요소의 width 값 자체가 변하는 게 아니라 부모 요소의 width 만큼 margin이 생겨서 그렇게 보임
+    <br>block 요소들은 width 지정 시 자식 요소의 width 값 자체가 변하는 게 아니라 부모 요소의 width 만큼 float가 적용된 width를 제외한 너비에 margin이 생겨서 그렇게 보이는 것임
     <br>float 요소와 비float 요소를 사용 시 비 float 요소가 아래 층에 깔림 
-    <br>만약 둘을 가로 배치 하고 싶은 요소에 전부 float 선언
+    <br>만약 가로 배치 하고 싶은 요소가 있다면 전부 float 선언
     <br><br>
     float:left; right, center 도 존재
 
@@ -90,12 +90,55 @@
 
 <div>
     <h1>Clear</h1>
-        자식 요소가 부모 요소로 부터 떠오른다(margin 제거)
+        Float로 띄운 것때문에 margin이 사라져서 텍스트 끼리 겹쳐지는 현상(범람)을 방지하고자 생긴 속성<br>
+        Float 된 애들 밑으로 안 가게 할 요소에 Clear:left를 적용
+        <br>Margin이 다시 생긴 게 아니라 위의 margin 0에 영향을 받지 않겠다 선언 하는 느낌?인?듯? float의 속성 값에 영향을 받지 않으려면(=기능이 정상 작동 하려면) float와 동일 값(float:left인 경우 clear:left)를 적용 해야함
+        <br><br>
+        Clearfix : Clear 속성으로 float의 layout을 바로 잡는 기법
+
+        <br> 
+        범람을막고싶은요소이름:: after { // after 어떤 요소 이후 생성(both의 경우 두 가지 동시에 대응하기 위해 both 사용)
+            content:" ";
+            display:block;
+            clear:both;
+        }
+        <br> <br> 
+        header를 float로 띄워서
+        header:: after { 
+            content:" ";
+            display:block;
+            clear:both;
+        }
+
+        로 쓰는 게 국룰
+    
+</div>
+
+<div>
+    <h1>Flex</h1>
+        
         <br>block 요소들은 width 지정 시 자식 
     
 </div>
 
-font 테스트
+
+
+<div>
+    <h1>Position</h1>
+        
+        <br>block 요소들은 width 지정 시 자식 
+    
+</div>
+
+
+<div>
+    <h1>Grid</h1>
+        
+        <br>block 요소들은 width 지정 시 자식 
+    
+</div>
+
+font 테스트 왜 폰트 설정 안 먹지...
 
 </body>
 
