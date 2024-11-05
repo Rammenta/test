@@ -118,8 +118,22 @@
 
 <div>
     <h1>Flex</h1>
-        
-        <br>block 요소들은 width 지정 시 자식 
+        예전에는 float로 다 띄우고 요소:last-child에 margin:0을 줘서 가로 배치 했는데 이게 너무 비효율적이라 나온 것이 Flexbox
+        <br>
+        <br>flex container : display:flex;를 선언한 부모 요소
+        <br>item : 컨테이너의 자식 요소(배치 시킬 요소)
+        <br>main axis : 가로(row) 배치의 주축/세로(column) 배치의 보조축
+        <br>cross axis 세로(column)의 주축/가로(rox) 배치의 보조축
+        <br><br>
+        부모 요소에 flex를 적용하면 자식 요소들이 전부 float 효과를 얻음
+        <br>
+        여기에 {justify-content:space-between; } 속성을 주면 컨테이너의 너비 전체에 item를 배치하고 item의 사이 사이에 같은 비율로 공백을 줌 (한글의 글 맞춤 옵션과 비슷한 효과인듯?)
+
+        <br>
+        .container {
+            display:flex;
+            justify-content:space-between;
+        }
     
 </div>
 
