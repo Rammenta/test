@@ -59,10 +59,10 @@ html {
     */
 
     main{
-        display:flex;
+  /*      display:flex;
         justify-self:space-between;
         height:300vh;
-
+*/
     }
 
 /* .은 class #은 id */
