@@ -1,6 +1,117 @@
-.diphylleia-regular {
-    font-family: "Diphylleia", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+*{ /* css 기본 구성 */
+  box-sizing: border-box;
+}
+
+body {
+margin:0;
+padding:0;
+font-family: "Diphylleia", serif;
+}
+
+a:link, a:visited {
+text-decoration: none;
+color:black;
+}
+
+.container {
+  width:960px;
+  margin:0 auto;
+
+}
+
+/* navigation bar */
+nav {
+  height:80px;
+  background-color: rgb(143, 196, 178);
+  line-height:80px;
+
+}
+
+nav::after{ /* 내용 넘침 방지용 뻥카 영역 */
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.nav-logo {
+  font-size:30px;
+  float: left;
+  margin:0;
+  margin-right:10px;
+}
+
+.nav-menu {
+  float:right;
   
+}
+
+.nav-btn {
+  list-style-type:none;
+  margin:0;
+
+}
+
+ul.nav-btn > li { 
+  /* nav-btn 이라는 class를 가지는 ul 태그 내부의 li 태그 */
+  float: left;
+  margin-left:25px;
+  font-size:20px;
+  font-weight:bold;
+}
+
+
+/* header */
+.hd{
+  position:relative;
+
+  height:600px;
+  text-align:center;
+}
+
+.hd-title{
+  font-size:60px;
+  margin-top:0px;
+  margin-bottom:20px;
+  padding-top:200px;
+}
+
+.hd-content{
+  font-size:25px;
+}
+
+/* 배경 화면이 너무 어두울 경우에 어두운 글씨 안 보임 방지용 불투명 div */
+/* 여기서부터*/
+.hd:before { 
+  content:"";
+  display: block;
+  position: absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  opacity:0.3;
+
+  background-image: url("./thumbnail.jpg");
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+}
+
+.hd .container {
+  position: relative;
+  color:darkcyan;
+}
+
+/* 여기까지 */
+
+
+/* Section 
+실습은 float로 진행되지만 flex로 연습 하는 거 추천 */
+
+,sec{
+  text-align: center;
+  padding: 100px 0px;
+  background-color: chocolate;
+}
