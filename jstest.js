@@ -34,3 +34,11 @@ console.log(undf);
 주석
 
 */
+
+
+var student = {
+    grade: 1,
+    school : "lion school";
+};
+
+console.log(student);
