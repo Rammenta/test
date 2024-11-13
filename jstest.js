@@ -38,7 +38,7 @@ console.log(undf);
 
 var student = {
     grade: 1,
-    school : "lion school";
+    school : "lion school"
 };
 
 console.log(student);
