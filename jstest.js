@@ -42,4 +42,4 @@ var student = {
 };
 
 console.log(student);
-typeof(student);
+console.log(typeof(student));
