@@ -42,3 +42,4 @@ var student = {
 };
 
 console.log(student);
+typeof(student);
