@@ -35,7 +35,6 @@ console.log(undf);
 
 */
 
-
 var student = {
     grade: 1,
     school : "lion school"
@@ -43,3 +42,18 @@ var student = {
 
 console.log(student);
 console.log(typeof(student));
+
+/*
+객체(object) : 속성의 모음으로 이루어진 데이터
+
+속성 : 데이터 타입에 무관하게 값 할당이 가능
+속성의 구분은 ","로 속성명과 값으로 정의.
+*/
+/*
+
+객체의 값 호출 방법
+
+객체명.속성명
+*/
+var gradeInfo = student.grade;
+console.log(gradeInfo);
