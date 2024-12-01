@@ -1,5 +1,3 @@
-// script.js
-
 // 폼과 결과 요소 가져오기
 const form = document.getElementById('conversionForm');
 const resultDiv = document.getElementById('result');
